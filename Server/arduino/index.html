@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Air Quality Montitoring</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	<script language='javascript' type='text/javascript'>
+		$(document).ready(function() {
+			setInterval( function() {
+				$('#ppm').load('getppm.php');
+			}, 2000);
+		});
+</script>
+</head>
+<body>
+	<h1>Air Quality Control</h1>
+	<p id="ppm">Sensor Warming Up</p>
+</body>
+</html>
+<html>
+<head>
